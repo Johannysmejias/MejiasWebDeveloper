@@ -1,0 +1,288 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #010f21 0%,rgb(4, 2, 59) 50%, #537895 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+/* estilos del navegador*/
+nav{
+  font-family: 'Comfortaa', cursive; 
+  background-color: black;
+  align-items: flex-start;
+  
+}
+.logo-nav{
+    max-height: 50px;
+}
+.nav-link{
+    color: rgb(201, 236, 42);
+}
+
+.color-nav{
+    background-color: black;
+}
+/* este menu es para las pantallas mas grandes */
+.menu-desktop{
+    display: none;
+}
+/* estilos del home */
+.contenedor-cards{
+    margin: 2rem;
+}
+.contenedor{
+    margin: 2.5rem;
+    padding-top: 4rem;
+}
+/* tarjetas de servicios a ofrecer */
+.card{
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color:rgba(21, 31, 116, 0.8);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card:hover{
+    background-color: rgba(59, 0, 119, 0.56);
+}
+.card div img{
+    width: 100%;
+    border-radius: 1rem;
+    border:  solid rgb(201, 236, 42);
+}
+.card div h2{
+    margin-bottom: 1rem;
+    text-align: center;
+    color: rgb(201, 236, 42);
+    font-size: 2rem;
+}
+.card div p{
+    margin-top: 2rem;
+}
+/* botones */
+.button {
+    display: flex;
+    border-radius: 4rem;
+    border: 0.08rem solid black;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+    margin: 0.8rem;
+    background-color: #c9ec2a;
+}
+.button:hover{
+    background-color: black;
+    border:0.08rem solid#c9ec2a ;
+    color: #c9ec2a;
+} 
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+/* estilos main  */
+.contenedor h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.6rem;
+    color: rgb(201, 236, 42);
+}
+.contenedor p{
+    text-align: center;
+  
+} 
+/* estilos works portfolio */
+.works{
+    margin: 2rem;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+    background-color: rgba(58, 16, 72, 0.745);
+    border-radius: 2rem;
+}
+.work h2{
+    margin-left: 2rem;
+}
+.img-descripcion{
+    margin: 2.5rem;
+    border-radius: 2rem;
+    border: 0.3rem solid chartreuse;    
+}
+.img-escritorio{
+    display: none;
+}
+.img-phone{
+    display: none;
+}
+/* estilos de la descripción de los works */
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descripcion p {
+    text-align: left;
+    padding: 1rem;
+}
+
+/* estilos de sobre-mi */
+.sobre-mi{
+    margin: 1rem;
+}
+.descripcion-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-perfil{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.sobre-mi p{
+    text-align: justify;
+}
+/* estilos de conocimientos de lenguajes */
+.titulo-lenguaje{
+text-align: center;
+margin: 2.5rem;
+}
+.lenguajes{
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(4, 10, 48, 0.497);
+}
+@keyframes animacion-lenguajes{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.lenguajes img{
+    margin: 1rem;
+    max-width: 3rem;
+    object-fit: contain;
+    animation: animacion-lenguajes;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+
+}
+/* estilos testimonios */
+
+.testimonios p{
+    text-align: left;
+    margin: 1rem;
+}
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color:rgba(41, 46, 89, 0.6);
+}
+.user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user h2{
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    color: rgb(201, 236, 42);
+}
+.user img{
+    margin: 1rem;
+    max-width: 50px;
+}
+/* Estilos del footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+@media(min-width: 768px) {
+    /* Estilos del nav para pantallas mas grandes
+    se oculta el menu hamburguesa*/
+    .menu-desktop{
+        display: flex;
+    }
+    .boton-menu{
+        display: none;
+    }
+    .contenedor h1{
+        font-size: 4rem;
+    }
+    /* posicionamiento de las tarjetas de servicio en forma de fila */
+    .contenedor-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    /* estilos sobre-mi.html  */
+    .sobre-mi{
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        align-items: flex-start;
+    }
+    .descripcion-perfil{
+        padding: 0.3rem;
+    }
+    .img-perfil img{
+        object-fit: contain;
+        height: 400px;
+    }
+  
+    /* estilos portfolio */
+    .work{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .descripcion{
+        display: flex;
+        justify-content: center;
+    }
+    .descripcion p{
+        margin: 1rem;
+    }
+    .img-escritorio{
+        display: block;
+        margin: 2rem;
+        object-fit: contain;
+    }
+    .img-phone{
+        display: flex;
+        margin: 2rem;
+        object-fit: contain;
+    }
+    .lenguajes img{
+        width: 10%;
+    }
+ }
