@@ -105,22 +105,25 @@ nav{
 } 
 /* estilos works portfolio */
 .works{
-    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
 }
 .work{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 1.5rem;
     background-color: rgba(58, 16, 72, 0.745);
     border-radius: 2rem;
+    object-fit: contain;
+    justify-self: center;
 }
 .work h2{
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .img-descripcion{
-    margin: 2.5rem;
-    border-radius: 2rem;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
     border: 0.3rem solid chartreuse;    
 }
 .img-escritorio{
