@@ -36,13 +36,18 @@ body{
         margin-right: 15%;
         .contenedor{
             h1{
-                font-size: 4rem;
+                font-size: 3.8rem;
+            }
+            .presentacion{
+                text-align: center;
             }
         }
         .contenedor-cards{
             display: flex;
             flex-direction: row;
             justify-content: center;
+            padding-left: 10%;
+            padding-right: 10%;
             .card{
                 min-width: 32%;
             }
@@ -52,7 +57,7 @@ body{
             grid-template-columns: 2fr 6fr;
             align-items: flex-start;
             .descripcion-perfil{
-                padding: 0.3rem;
+                padding-top: 0.3rem;
             }
             .img-perfil{
                 img{
@@ -73,9 +78,10 @@ body{
                     h2{
                         margin: 1rem;
                     }
-                    p{
-                        margin: 1rem;
-                    }
+                }
+                p{
+                    margin-left: 1rem;
+                    text-align: left;
                 }
                 .img-escritorio{
                     display: block;

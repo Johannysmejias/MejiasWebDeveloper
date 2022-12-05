@@ -1,7 +1,7 @@
 /* estilos main  */
 main{
     color: $color-texto;
-    min-height: 1000px;
+    min-height: 850px;
     h2{
         font-size: 1.6rem;
     }
@@ -55,7 +55,7 @@ main{
         margin: 0;
         .work{
             margin: 1rem;
-            padding: 1rem;
+            padding: 2rem;
             background-color: $color-testimonios;
             border-radius: 2rem;
             object-fit: contain;
@@ -67,7 +67,7 @@ main{
                 margin: 1rem;
                 margin-top: 1.5rem;
                 border-radius: 1rem;
-                border: 0.3rem solid $color-secundario;    
+                border: 0.2rem solid $color-secundario;    
             }
             .img-escritorio{
                 display: none;
@@ -79,9 +79,9 @@ main{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                p {
-                    text-align: left;
-                }
+            }
+            p {
+                text-align: left;
             }
         }
     }

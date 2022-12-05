@@ -34,7 +34,7 @@ nav {
 /* estilos main  */
 main {
   color: #fefbfb;
-  min-height: 1000px;
+  min-height: 850px;
   /* estilos del home */
   /* estilos works portfolio */
   /*estilos sobre-mi*/
@@ -81,7 +81,7 @@ main {
     margin: 0; }
     main .works .work {
       margin: 1rem;
-      padding: 1rem;
+      padding: 2rem;
       background-color: rgba(41, 46, 89, 0.6);
       border-radius: 2rem;
       object-fit: contain;
@@ -90,7 +90,7 @@ main {
         margin: 1rem;
         margin-top: 1.5rem;
         border-radius: 1rem;
-        border: 0.3rem solid #c9ec2a; }
+        border: 0.2rem solid #c9ec2a; }
       main .works .work .img-escritorio {
         display: none; }
       main .works .work .img-phone {
@@ -99,8 +99,8 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        main .works .work .descripcion p {
-          text-align: left; }
+      main .works .work p {
+        text-align: left; }
   main .sobre-mi {
     margin: 1rem; }
     main .sobre-mi .descripcion-perfil {
@@ -218,11 +218,15 @@ footer {
     margin-left: 15%;
     margin-right: 15%; }
     main .contenedor h1 {
-      font-size: 4rem; }
+      font-size: 3.8rem; }
+    main .contenedor .presentacion {
+      text-align: center; }
     main .contenedor-cards {
       display: flex;
       flex-direction: row;
-      justify-content: center; }
+      justify-content: center;
+      padding-left: 10%;
+      padding-right: 10%; }
       main .contenedor-cards .card {
         min-width: 32%; }
     main .sobre-mi {
@@ -230,7 +234,7 @@ footer {
       grid-template-columns: 2fr 6fr;
       align-items: flex-start; }
       main .sobre-mi .descripcion-perfil {
-        padding: 0.3rem; }
+        padding-top: 0.3rem; }
       main .sobre-mi .img-perfil img {
         object-fit: contain;
         height: 400px; }
@@ -244,8 +248,9 @@ footer {
         justify-content: center; }
         main .works .work .descripcion h2 {
           margin: 1rem; }
-        main .works .work .descripcion p {
-          margin: 1rem; }
+      main .works .work p {
+        margin-left: 1rem;
+        text-align: left; }
       main .works .work .img-escritorio {
         display: block;
         margin: 2rem;
