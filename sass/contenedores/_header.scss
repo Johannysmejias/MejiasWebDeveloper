@@ -1,0 +1,22 @@
+/*estilos header*/
+nav{
+    font-family: 'Comfortaa', cursive; 
+    background-color: $color-principal;
+    align-items: flex-start;
+     /* este menu es para las pantallas mas grandes */
+    .menu-desktop{
+        display: none;
+        }
+    .logo-nav{
+        max-height: 50px;
+    }
+    .nav-link{
+        color: $color-secundario;
+    }
+    
+    .color-nav{
+        background-color: black;
+    }
+   
+    
+}

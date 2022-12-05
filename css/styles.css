@@ -1,292 +1,230 @@
 /*reset*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-image: linear-gradient(to bottom, #010f21 0%,rgb(4, 2, 59) 50%, #537895 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: whitesmoke;
-    font-size: 1rem;
-}
-/* estilos del navegador*/
-nav{
-  font-family: 'Comfortaa', cursive; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: linear-gradient(to bottom, #010f21 0%, #04023b 50%, #537895 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1rem; }
+
+main .contenedor-cards .card div h2, main .works .work h2, main .sobre-mi .descripcion-perfil h2, main .testimonio .user h2 {
+  color: #c9ec2a;
+  font-size: 2rem; }
+
+/*estilos header*/
+nav {
+  font-family: 'Comfortaa', cursive;
   background-color: black;
   align-items: flex-start;
-  
-}
-.logo-nav{
-    max-height: 50px;
-}
-.nav-link{
-    color: rgb(201, 236, 42);
-}
+  /* este menu es para las pantallas mas grandes */ }
+  nav .menu-desktop {
+    display: none; }
+  nav .logo-nav {
+    max-height: 50px; }
+  nav .nav-link {
+    color: #c9ec2a; }
+  nav .color-nav {
+    background-color: black; }
 
-.color-nav{
-    background-color: black;
-}
-/* este menu es para las pantallas mas grandes */
-.menu-desktop{
-    display: none;
-}
-/* estilos del home */
-.contenedor-cards{
-    margin: 2rem;
-}
-.contenedor{
-    margin: 2.5rem;
-    padding-top: 4rem;
-}
-/* tarjetas de servicios a ofrecer */
-.card{
-    margin: 1rem;
-    padding: 1.5rem;
-    background-color:rgba(21, 31, 116, 0.8);
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.card:hover{
-    background-color: rgba(59, 0, 119, 0.56);
-}
-.card div img{
-    width: 100%;
-    border-radius: 1rem;
-    border:  solid rgb(201, 236, 42);
-}
-.card div h2{
-    margin-bottom: 1rem;
-    text-align: center;
-    color: rgb(201, 236, 42);
-    font-size: 2rem;
-}
-.card div p{
-    margin-top: 2rem;
-}
-/* botones */
-.button {
-    display: flex;
-    border-radius: 4rem;
-    border: 0.08rem solid black;
-    padding: 0.7rem;
-    font-size: 1.7rem;
-    margin: 0.8rem;
-    background-color: #c9ec2a;
-}
-.button:hover{
-    background-color: black;
-    border:0.08rem solid#c9ec2a ;
-    color: #c9ec2a;
-} 
-
-.botones{
-    display: flex;
-    justify-content: center;
-}
-.button a{
-    text-decoration: none;
-    color: black;
-}
 /* estilos main  */
-.contenedor h1{
-    text-align: center;
-    padding: 1rem;
-    font-size: 2.6rem;
-    color: rgb(201, 236, 42);
-}
-.contenedor p{
-    text-align: center;
-  
-} 
-/* estilos works portfolio */
-.works{
+main {
+  color: #fefbfb;
+  /* estilos del home */
+  /* estilos works portfolio */
+  /*estilos sobre-mi*/
+  /* estilos de conocimientos de lenguajes */
+  /*estilos testimonios*/
+  /* botones */ }
+  main .contenedor {
+    margin: 2.5rem;
+    padding-top: 4rem; }
+    main .contenedor h1 {
+      text-align: center;
+      padding: 1rem;
+      font-size: 2.6rem;
+      color: #c9ec2a; }
+    main .contenedor p {
+      text-align: center; }
+  main .contenedor-cards {
+    margin: 1rem;
+    /* tarjetas de servicios a ofrecer */ }
+    main .contenedor-cards .card {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: rgba(21, 31, 116, 0.8);
+      border-radius: 2rem;
+      display: block; }
+      main .contenedor-cards .card img {
+        width: 100%;
+        border-radius: 1rem; }
+      main .contenedor-cards .card div {
+        margin-top: 1rem; }
+        main .contenedor-cards .card div p {
+          margin: 0.7rem; }
+      main .contenedor-cards .card:hover {
+        background-color: rgba(59, 0, 119, 0.56); }
+  main .works {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     padding: 0;
-    margin: 0;
-}
-.work{
-    margin: 1.5rem;
-    background-color: rgba(58, 16, 72, 0.745);
-    border-radius: 2rem;
-    object-fit: contain;
-    justify-self: center;
-}
-.work h2{
-    margin-left: 1rem;
-}
-.img-descripcion{
-    margin: 1rem;
-    margin-top: 1.5rem;
-    border-radius: 1rem;
-    border: 0.3rem solid chartreuse;    
-}
-.img-escritorio{
-    display: none;
-}
-.img-phone{
-    display: none;
-}
-/* estilos de la descripción de los works */
-.descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.descripcion p {
-    text-align: left;
-    padding: 1rem;
-}
-
-/* estilos de sobre-mi */
-.sobre-mi{
-    margin: 1rem;
-}
-.descripcion-perfil{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.img-perfil{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-.sobre-mi p{
-    text-align: justify;
-}
-/* estilos de conocimientos de lenguajes */
-.titulo-lenguaje{
-text-align: center;
-margin: 2.5rem;
-}
-.lenguajes{
+    margin: 0; }
+    main .works .work {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: rgba(41, 46, 89, 0.6);
+      border-radius: 2rem;
+      object-fit: contain;
+      justify-self: center; }
+      main .works .work h2 {
+        margin: 1rem; }
+      main .works .work .img-descripcion {
+        margin: 1rem;
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        border: 0.3rem solid #c9ec2a; }
+      main .works .work .img-escritorio {
+        display: none; }
+      main .works .work .img-phone {
+        display: none; }
+      main .works .work .descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        main .works .work .descripcion p {
+          text-align: left; }
+  main .sobre-mi {
+    margin: 1rem; }
+    main .sobre-mi .descripcion-perfil {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .sobre-mi .descripcion-perfil p {
+        text-align: justify;
+        margin-top: 1rem; }
+    main .sobre-mi .img-perfil {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem; }
+      main .sobre-mi .img-perfil img {
+        border-radius: 0.6rem; }
+  main .titulo-lenguaje {
+    text-align: center;
+    margin: 2.5rem; }
+  main .lenguajes {
     margin: 2rem;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgba(4, 10, 48, 0.497);
-}
-@keyframes animacion-lenguajes{
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.2);
-    }
-}
-.lenguajes img{
-    margin: 1rem;
-    max-width: 3rem;
-    object-fit: contain;
-    animation: animacion-lenguajes;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-direction: alternate-reverse;
+    justify-content: space-around; }
+    main .lenguajes img {
+      margin: 1rem;
+      max-width: 3rem;
+      object-fit: contain;
+      animation: animacion-lenguajes;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-direction: alternate-reverse; }
 
-}
-/* estilos testimonios */
-
-.testimonios p{
-    text-align: left;
-    margin: 1rem;
-}
-.testimonio{
+@keyframes animacion-lenguajes {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
+  main .testimonio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     margin: 1rem;
     padding: 1rem;
-    background-color:rgba(41, 46, 89, 0.6);
-}
-.user{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.user h2{
-    padding: 0.7rem;
-    font-size: 1.5rem;
-    color: rgb(201, 236, 42);
-}
-.user img{
-    margin: 1rem;
-    max-width: 50px;
-}
-/* Estilos del footer */
-footer{
-    background-color: black;
-    text-align: center;
-    padding: 2rem;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-}
-@media(min-width: 768px) {
-    /* Estilos del nav para pantallas mas grandes
-    se oculta el menu hamburguesa*/
-    .menu-desktop{
-        display: flex;
-    }
-    .boton-menu{
-        display: none;
-    }
-    .contenedor h1{
-        font-size: 4rem;
-    }
-    /* posicionamiento de las tarjetas de servicio en forma de fila */
-    .contenedor-cards{
-        display: flex;
-        flex-direction: row;
-    }
-    /* estilos sobre-mi.html  */
-    .sobre-mi{
-        display: grid;
-        grid-template-columns: 2fr 6fr;
-        align-items: flex-start;
-    }
-    .descripcion-perfil{
-        padding: 0.3rem;
-    }
-    .img-perfil img{
-        object-fit: contain;
-        height: 400px;
-    }
-  
-    /* estilos portfolio */
-    .work{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: flex-start;
-    }
-    .descripcion{
-        display: flex;
-        justify-content: center;
-    }
-    .descripcion p{
+    background-color: rgba(41, 46, 89, 0.6); }
+    main .testimonio p {
+      text-align: left;
+      margin: 1rem; }
+    main .testimonio .user {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      main .testimonio .user h2 {
+        padding: 0.7rem; }
+      main .testimonio .user img {
         margin: 1rem;
-    }
-    .img-escritorio{
+        max-width: 60px; }
+  main .botones {
+    display: flex;
+    justify-content: center; }
+    main .botones a {
+      text-decoration: none;
+      color: black; }
+  main .button {
+    display: flex;
+    border-radius: 4rem;
+    border: 0.08rem solid black;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+    margin: 0.8rem;
+    background-color: #c9ec2a; }
+    main .button:hover {
+      background-color: black;
+      border: 0.08rem solid #c9ec2a;
+      color: #c9ec2a; }
+
+/* Estilos del footer */
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 2rem;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  color: #fefbfb; }
+
+@media (min-width: 768px) {
+  nav .menu-desktop {
+    display: flex; }
+  nav .boton-menu {
+    display: none; }
+  main {
+    margin-left: 15%;
+    margin-right: 15%; }
+    main .contenedor h1 {
+      font-size: 4rem; }
+    main .contenedor-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      main .contenedor-cards .card {
+        min-width: 32%; }
+    main .sobre-mi {
+      display: grid;
+      grid-template-columns: 2fr 6fr;
+      align-items: flex-start; }
+      main .sobre-mi .descripcion-perfil {
+        padding: 0.3rem; }
+      main .sobre-mi .img-perfil img {
+        object-fit: contain;
+        height: 400px; }
+    main .works .work {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: flex-start; }
+      main .works .work .descripcion {
+        display: flex;
+        justify-content: center; }
+        main .works .work .descripcion p {
+          margin: 1rem; }
+      main .works .work .img-escritorio {
         display: block;
         margin: 2rem;
-        object-fit: contain;
-    }
-    .img-phone{
+        object-fit: contain; }
+      main .works .work .img-phone {
         display: flex;
         margin: 2rem;
-        object-fit: contain;
-    }
-    .lenguajes img{
-        width: 10%;
-    }
- }
+        object-fit: contain; }
+    main .lenguajes img {
+      width: 10%; } }
