@@ -1,28 +1,23 @@
 /* Estilos del footer */
 footer{
     @include estilos-footer;
-    
-    p{
-        margin-left: 10%;
-        margin-right: 15%;
-    }
-    div{
-        margin-left: 15%;
-        margin-right: 10%;
-        ul{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            li{
-                list-style: none;
-                margin: 0.3rem;
-                a{
-                    img{
-                        height: 30px;
+        
+        div{
+           
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                li{
+                    list-style: none;
+                    margin: 0.3rem;
+                    a{
+                        img{
+                            height: 30px;
+                        }
                     }
                 }
             }
-        }
     }
 }

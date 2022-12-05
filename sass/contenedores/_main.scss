@@ -4,6 +4,7 @@ main{
     min-height: 850px;
     h2{
         font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
     .contenedor{
         margin: 2.5rem;
@@ -14,7 +15,7 @@ main{
             font-size: 2.6rem;
             color: $color-secundario;
         }
-        p{
+        .presentacion{
             text-align: center;
         }
          
@@ -55,7 +56,7 @@ main{
         margin: 0;
         .work{
             margin: 1rem;
-            padding: 2rem;
+            padding: 0.3rem;
             background-color: $color-testimonios;
             border-radius: 2rem;
             object-fit: contain;
@@ -80,7 +81,7 @@ main{
                 flex-direction: column;
                 justify-content: center;
             }
-            p {
+            p{
                 text-align: left;
             }
         }
