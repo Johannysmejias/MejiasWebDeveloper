@@ -2,5 +2,8 @@
 //extend flex row
 %h2 {
     color: $color-secundario;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    &:hover{
+        color: $h2-hover;
+    }
 }

@@ -1,6 +1,10 @@
 /* estilos main  */
 main{
     color: $color-texto;
+    min-height: 1000px;
+    h2{
+        font-size: 1.6rem;
+    }
     .contenedor{
         margin: 2.5rem;
         padding-top: 4rem;
@@ -30,13 +34,13 @@ main{
                 border-radius: 1rem;
             }
             div{
-                margin-top: 1rem;
-                
+                margin: 0.7rem;
                 h2{
                     @extend %h2;
+                    text-align: center;
                 }
                 p{
-                    margin: 0.7rem;
+                    text-align: center;
                 }
             }
             &:hover{
@@ -58,7 +62,6 @@ main{
             justify-self: center;
             h2{
                 @extend %h2;
-                margin: 1rem;
             }
             .img-descripcion{
                 margin: 1rem;
@@ -91,18 +94,21 @@ main{
                 text-align: justify;
                 margin-top: 1rem;
             }
-            h2{
-                @extend %h2;
+            div{
+                h2{
+                    @extend %h2;
+                }
+                P{
+                    text-align: left;
+                }
             }
-            
         }
+        
+
         .img-perfil{
             display: flex;
             flex-direction: column;
             margin: 1rem;
-            img{
-                border-radius: 0.6rem;
-            }
         }
     }
     /* estilos de conocimientos de lenguajes */
@@ -170,6 +176,7 @@ main{
             text-decoration: none;
             color: black;
         }
+        
     }
     .button {
         @include estilosBotones;

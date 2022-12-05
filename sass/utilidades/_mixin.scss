@@ -2,11 +2,11 @@
 //mixin para botones
 @mixin estilosBotones{
     display: flex;
-    border-radius: 4rem;
-    border: 0.08rem solid $color-principal;
-    padding: 0.7rem;
-    font-size: 1.7rem;
-    margin: 0.8rem;
+    border-radius: 3.5rem;
+    border: 0.06rem solid $color-principal;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    margin: 1rem;
     background-color: $color-secundario;
     
 }
@@ -15,10 +15,26 @@
     background-color: $color-principal;
     border:0.08rem solid $color-secundario ;
     color: $color-secundario;
+    a{
+        color: $color-secundario;
+    }
+    
 }
 //mixin flex
 @mixin flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+@mixin estilos-footer {
+    background-color: $color-principal;
+    text-align: center;
+    padding: 2rem;
+    bottom: 0;
+    width: 100%;
+    color: $color-texto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }

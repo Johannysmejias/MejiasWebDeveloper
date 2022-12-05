@@ -10,9 +10,11 @@ body {
   background-size: cover;
   font-size: 1rem; }
 
-main .contenedor-cards .card div h2, main .works .work h2, main .sobre-mi .descripcion-perfil h2, main .testimonio .user h2 {
+main .contenedor-cards .card div h2, main .works .work h2, main .sobre-mi .descripcion-perfil div h2, main .testimonio .user h2 {
   color: #c9ec2a;
-  font-size: 2rem; }
+  font-size: 1.6rem; }
+  main .contenedor-cards .card div h2:hover, main .works .work h2:hover, main .sobre-mi .descripcion-perfil div h2:hover, main .testimonio .user h2:hover {
+    color: #eaff8e; }
 
 /*estilos header*/
 nav {
@@ -32,12 +34,15 @@ nav {
 /* estilos main  */
 main {
   color: #fefbfb;
+  min-height: 1000px;
   /* estilos del home */
   /* estilos works portfolio */
   /*estilos sobre-mi*/
   /* estilos de conocimientos de lenguajes */
   /*estilos testimonios*/
   /* botones */ }
+  main h2 {
+    font-size: 1.6rem; }
   main .contenedor {
     margin: 2.5rem;
     padding-top: 4rem; }
@@ -61,9 +66,11 @@ main {
         width: 100%;
         border-radius: 1rem; }
       main .contenedor-cards .card div {
-        margin-top: 1rem; }
+        margin: 0.7rem; }
+        main .contenedor-cards .card div h2 {
+          text-align: center; }
         main .contenedor-cards .card div p {
-          margin: 0.7rem; }
+          text-align: center; }
       main .contenedor-cards .card:hover {
         background-color: rgba(59, 0, 119, 0.56); }
   main .works {
@@ -79,8 +86,6 @@ main {
       border-radius: 2rem;
       object-fit: contain;
       justify-self: center; }
-      main .works .work h2 {
-        margin: 1rem; }
       main .works .work .img-descripcion {
         margin: 1rem;
         margin-top: 1.5rem;
@@ -105,12 +110,12 @@ main {
       main .sobre-mi .descripcion-perfil p {
         text-align: justify;
         margin-top: 1rem; }
+      main .sobre-mi .descripcion-perfil div P {
+        text-align: left; }
     main .sobre-mi .img-perfil {
       display: flex;
       flex-direction: column;
       margin: 1rem; }
-      main .sobre-mi .img-perfil img {
-        border-radius: 0.6rem; }
   main .titulo-lenguaje {
     text-align: center;
     margin: 2.5rem; }
@@ -162,16 +167,18 @@ main {
       color: black; }
   main .button {
     display: flex;
-    border-radius: 4rem;
-    border: 0.08rem solid black;
-    padding: 0.7rem;
-    font-size: 1.7rem;
-    margin: 0.8rem;
+    border-radius: 3.5rem;
+    border: 0.06rem solid black;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    margin: 1rem;
     background-color: #c9ec2a; }
     main .button:hover {
       background-color: black;
       border: 0.08rem solid #c9ec2a;
       color: #c9ec2a; }
+      main .button:hover a {
+        color: #c9ec2a; }
 
 /* Estilos del footer */
 footer {
@@ -179,9 +186,28 @@ footer {
   text-align: center;
   padding: 2rem;
   bottom: 0;
-  position: relative;
   width: 100%;
-  color: #fefbfb; }
+  color: #fefbfb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    margin-left: 10%;
+    margin-right: 15%; }
+  footer div {
+    margin-left: 15%;
+    margin-right: 10%; }
+    footer div ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      footer div ul li {
+        list-style: none;
+        margin: 0.3rem; }
+        footer div ul li a img {
+          height: 30px; }
 
 @media (min-width: 768px) {
   nav .menu-desktop {
@@ -216,6 +242,8 @@ footer {
       main .works .work .descripcion {
         display: flex;
         justify-content: center; }
+        main .works .work .descripcion h2 {
+          margin: 1rem; }
         main .works .work .descripcion p {
           margin: 1rem; }
       main .works .work .img-escritorio {
