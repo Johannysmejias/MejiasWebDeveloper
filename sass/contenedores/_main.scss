@@ -104,45 +104,47 @@ main{
                 }
             }
         }
-        
-
         .img-perfil{
             display: flex;
             flex-direction: column;
             margin: 1rem;
         }
     }
+    
     /* estilos de conocimientos de lenguajes */
     .titulo-lenguaje{
         text-align: center;
-        margin: 2.5rem;
+        margin: 2rem;
         }
     .lenguajes{
-        margin: 2rem;
-        padding: 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 3rem;
+        grid-gap:0.3rem;
+        .item{
+            &:nth-child(1){
+                grid-column-start: span 2;
+            }
+            &:nth-child(3){
+                grid-row-start: span 2;
+            }
+            &:nth-child(8){
+                grid-column-start: span 2;
+            }
+            img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &:hover{
+                opacity: 0.2;
+            }
+
+        }
+        }
         
-        img{
-            margin: 1rem;
-            max-width: 3rem;
-            object-fit: contain;
-            animation: animacion-lenguajes;
-            animation-iteration-count: infinite;
-            animation-duration: 2s;
-            animation-direction: alternate-reverse;
-        
-        }
     }
-    @keyframes animacion-lenguajes{
-        0%{
-            transform: scale(1);
-        }
-        100%{
-            transform: scale(1.2);
-        }
-    }
+    
     /*estilos testimonios*/
     
     .testimonio{
@@ -185,6 +187,6 @@ main{
          &:hover{
             @include botones-hover;
          }
-     }
-
+        
+    }
 }

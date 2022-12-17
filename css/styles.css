@@ -119,27 +119,25 @@ main {
       margin: 1rem; }
   main .titulo-lenguaje {
     text-align: center;
-    margin: 2.5rem; }
+    margin: 2rem; }
   main .lenguajes {
-    margin: 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    main .lenguajes img {
-      margin: 1rem;
-      max-width: 3rem;
-      object-fit: contain;
-      animation: animacion-lenguajes;
-      animation-iteration-count: infinite;
-      animation-duration: 2s;
-      animation-direction: alternate-reverse; }
-
-@keyframes animacion-lenguajes {
-  0% {
-    transform: scale(1); }
-  100% {
-    transform: scale(1.2); } }
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 3rem;
+    grid-gap: 0.3rem; }
+    main .lenguajes .item:nth-child(1) {
+      grid-column-start: span 2; }
+    main .lenguajes .item:nth-child(3) {
+      grid-row-start: span 2; }
+    main .lenguajes .item:nth-child(8) {
+      grid-column-start: span 2; }
+    main .lenguajes .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      main .lenguajes .item img:hover {
+        opacity: 0.2; }
   main .testimonio {
     display: flex;
     flex-direction: column;
@@ -205,11 +203,68 @@ footer {
         height: 30px; }
 
 @media (min-width: 768px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 1370px; }
+    main .contenedor h1 {
+      font-size: 3.8rem; }
+    main .contenedor .presentacion {
+      text-align: center; }
+    main .contenedor-cards {
+      display: flex;
+      flex-direction: row;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      justify-content: center; }
+      main .contenedor-cards .card {
+        min-width: 33%; }
+    main .sobre-mi {
+      display: grid;
+      grid-template-columns: 2fr 6fr;
+      align-items: flex-start; }
+      main .sobre-mi .descripcion-perfil {
+        padding-top: 0.3rem; }
+      main .sobre-mi .img-perfil img {
+        object-fit: contain;
+        height: 400px; }
+    main .works .work {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: flex-start; }
+      main .works .work .descripcion {
+        display: flex;
+        justify-content: center; }
+        main .works .work .descripcion h2 {
+          margin: 1rem; }
+      main .works .work p {
+        margin-left: 1rem;
+        text-align: left; }
+      main .works .work .img-escritorio {
+        display: block;
+        margin: 0.5rem;
+        object-fit: contain;
+        margin-top: 2rem;
+        width: 250px; }
+    main .lenguajes {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 4rem;
+      grid-gap: 0.5rem; }
+  footer p {
+    margin-left: 10%;
+    margin-right: 15%; }
+  footer div {
+    margin-left: 15%;
+    margin-right: 10%; } }
+
+@media (min-width: 992px) {
   nav .menu-desktop {
     display: flex; }
   nav .boton-menu {
     display: none; }
   main {
+    min-height: 850px;
     margin-left: 15%;
     margin-right: 15%; }
     main .contenedor h1 {
@@ -250,13 +305,18 @@ footer {
       main .works .work .img-escritorio {
         display: block;
         margin: 2rem;
-        object-fit: contain; }
+        object-fit: contain;
+        min-width: 30%;
+        min-height: 40%; }
       main .works .work .img-phone {
         display: flex;
         margin: 2rem;
-        object-fit: contain; }
-    main .lenguajes img {
-      width: 10%; }
+        object-fit: contain;
+        min-height: 40%; }
+    main .lenguajes {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 6rem;
+      grid-gap: 0.3rem; }
   footer p {
     margin-left: 10%;
     margin-right: 15%; }

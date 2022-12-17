@@ -1,0 +1,176 @@
+@media(min-width: 768px){
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+        min-height: 1370px;
+        .contenedor{
+            h1{
+                font-size: 3.8rem;
+            }
+            .presentacion{
+                text-align: center;
+            }
+        }
+        .contenedor-cards{
+            display: flex;
+            flex-direction: row;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            justify-content: center;
+            .card{
+                min-width: 33%;
+            }
+        }
+        .sobre-mi{
+            display: grid;
+            grid-template-columns: 2fr 6fr;
+            align-items: flex-start;
+            .descripcion-perfil{
+                padding-top: 0.3rem;
+            }
+            .img-perfil{
+                img{
+                    object-fit: contain;
+                    height: 400px;
+                }
+            }
+        }
+        .works{
+            .work{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: flex-start;
+                .descripcion{
+                    display: flex;
+                    justify-content: center;
+                    h2{
+                        margin: 1rem;
+                    }
+                }
+                p{
+                    margin-left: 1rem;
+                    text-align: left;
+                }
+                .img-escritorio{
+                    display: block;
+                    margin: 0.5rem;
+                    object-fit: contain;
+                    margin-top: 2rem;
+                    width: 250px;
+                   
+                }        
+            }
+        }  .lenguajes {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 4rem;
+            grid-gap:0.5rem;
+        }
+    }
+    footer{
+        p{
+            margin-left: 10%;
+            margin-right: 15%;
+        }
+        div{
+            margin-left: 15%;
+            margin-right: 10%;}
+    }
+}
+@media(min-width: 992px){
+    nav{
+        .menu-desktop{
+            display: flex;
+        }
+        .boton-menu{
+            display: none;
+        }
+    }
+   
+    main{
+        min-height: 850px;
+        margin-left: 15%;
+        margin-right: 15%;
+        .contenedor{
+            h1{
+                font-size: 3.8rem;
+            }
+            .presentacion{
+                text-align: center;
+            }
+        }
+        .contenedor-cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            .card{
+                min-width: 32%;
+            }
+        }
+        .sobre-mi{
+            display: grid;
+            grid-template-columns: 2fr 6fr;
+            align-items: flex-start;
+            .descripcion-perfil{
+                padding-top: 0.3rem;
+            }
+            .img-perfil{
+                img{
+                    object-fit: contain;
+                    height: 400px;
+                }
+            }
+        }
+        .works{
+            .work{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: flex-start;
+            padding: 2rem;
+                .descripcion{
+                    display: flex;
+                    justify-content: center;
+                    h2{
+                        margin: 1rem;
+                    }
+                }
+                p{
+                    margin-left: 1rem;
+                    text-align: left;
+                }
+                .img-escritorio{
+                    display: block;
+                    margin: 2rem;
+                    object-fit: contain;
+                    min-width: 30%;
+                    min-height: 40%;
+                }
+                .img-phone{
+                    display: flex;
+                    margin: 2rem;
+                    object-fit: contain;
+                    min-height: 40%;
+                }
+        
+            }
+        }
+        .lenguajes {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 6rem;
+            grid-gap:0.3rem;
+        }
+    }
+    footer{
+        p{
+            margin-left: 10%;
+            margin-right: 15%;
+        }
+        div{
+            margin-left: 15%;
+            margin-right: 10%;
+        }
+    }
+}
